@@ -1,8 +1,8 @@
 <?php
 
-$host = "localhost:3306";
+$host = "localhost";
 $user = "root";
-$pass = "V6n2a9f8n7v1";
+$pass = "";
 $database = "chat";
 
 $db = new mysqli($host, $user, $pass, $database);
