@@ -1,4 +1,6 @@
 <?php include_once 'templates/header.php'; ?>
+<?php include_once 'functions/auth.php'; ?>
+<!-- line 2?? -->
 
 <?php 
 
@@ -7,6 +9,8 @@ if(isset($_SESSION['user']) && check_session($_SESSION['user'])){
 }
 
 // Handle login
+
+
 if ($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST)) {
     if(register($_POST['email'], $_POST['password'], $_POST['first_name'], $_POST['last_name'])){
         redirect("login");
