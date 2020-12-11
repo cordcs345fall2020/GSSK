@@ -23,7 +23,7 @@ include 'functions/app_start.php';
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo URL; ?>">Chat
+        <a class="nav-link" href="<?php echo URL; ?>index.php">Chat
           <span class="sr-only">(current)</span>
         </a>
       </li>
@@ -33,7 +33,10 @@ include 'functions/app_start.php';
       <?php if(isset($_SESSION['user'])): ?>
       <li class="nav-item">
         <a class="btn btn-danger" href="<?php echo URL; ?>logout.php">Logout</a>
-      </li>      
+      </li> 
+      <li class="nav-item">
+        <a class="btn active" href="<?php echo URL; ?>settings.php">Settings</a>
+      </li>     
       <?php else: ?>
         <li class="nav-item">
         <a class="btn btn-success" href="<?php echo URL; ?>login.php">Login</a>
