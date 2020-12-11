@@ -1,9 +1,0 @@
-fName: Sc
-lName: Uis
-email: scuis@test.com
-pass: scuis
-
-fName: Lan
-lName: Pe
-email: lanpe@test.com
-pass: lanpe
